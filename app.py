@@ -16,7 +16,7 @@ app.css.append_css({"external_url": "https://codepen.io/chriddyp/pen/bWLwgP.css"
 
 
 
-df = pd.read_csv('EUData')
+df = pd.read_csv('EUData.csv')
 df=df[df['UNIT']=="Current prices, million euro"]
 print(df.head())
 available_indicators = df['NA_ITEM'].unique()
